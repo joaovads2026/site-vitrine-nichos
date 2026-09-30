@@ -174,6 +174,47 @@ filter:saturate(.82) sepia(.14) contrast(1.04)
 .demo-bronzeamento .soleGallery i:nth-child(3){background-position:77% 56%!important}
 .demo-bronzeamento .soleGallery i:nth-child(4){background-position:34% 60%!important}
 .demo-bronzeamento .soleCarePhoto{background-position:48% 36%!important}
+
+/* SOLÉ final professional pass */
+.demo-bronzeamento{--sole-ink:#27140b;--sole-brown:#3b1909;--sole-gold:#e8aa48;--sole-cream:#fbf4e8}
+.demo-bronzeamento .solePhotoNote{display:block;color:#d7b98f;font-size:8px;margin-top:10px;letter-spacing:.02em}
+.demo-bronzeamento .soleTest>small{font-size:8px;letter-spacing:.18em;color:#b16c2d;font-weight:800}
+.demo-bronzeamento .soleTest>p{font-size:10px;line-height:1.6;color:#65584d;max-width:340px}
+.demo-bronzeamento .soleTest>a{display:inline-block;margin-top:8px;color:#8c4c18;font-size:9px;font-weight:800}
+.demo-bronzeamento .soleCard,.demo-bronzeamento .soleHelp,.demo-bronzeamento .soleTest>div{box-shadow:0 10px 30px rgba(57,27,10,.035)}
+.demo-bronzeamento .soleGoldBtn,.demo-bronzeamento .soleBook,.demo-bronzeamento .soleResultHead a,.demo-bronzeamento .soleFinal button{transition:transform .18s ease,filter .18s ease}
+.demo-bronzeamento .soleGoldBtn:hover,.demo-bronzeamento .soleBook:hover,.demo-bronzeamento .soleResultHead a:hover,.demo-bronzeamento .soleFinal button:hover{transform:translateY(-1px);filter:brightness(1.04)}
+@media(max-width:600px){
+.demo-bronzeamento .wrap{width:min(100% - 30px,1180px)!important}
+.demo-bronzeamento .soleNavIn{height:62px!important}
+.demo-bronzeamento .soleHero{height:640px!important}
+.demo-bronzeamento .soleHeroIn{padding-top:300px!important}
+.demo-bronzeamento .soleHero h1{font-size:46px!important;letter-spacing:-2px!important}
+.demo-bronzeamento .soleHero h1 em{font-size:37px!important}
+.demo-bronzeamento .soleHero p{font-size:11px!important;max-width:335px!important}
+.demo-bronzeamento .soleBenefits b{font-size:7.5px!important}
+.demo-bronzeamento .soleServiceTop h2{font-size:35px!important;line-height:1.02!important}
+.demo-bronzeamento .soleHelp{padding:14px 34px 14px 52px!important}
+.demo-bronzeamento .soleCards{gap:14px!important}
+.demo-bronzeamento .soleCardPic{height:205px!important}
+.demo-bronzeamento .soleCard h3{font-size:20px!important}
+.demo-bronzeamento .soleCard p{font-size:11px!important}
+.demo-bronzeamento .soleResults{padding:28px 0!important}
+.demo-bronzeamento .soleResultHead h2{font-size:34px!important}
+.demo-bronzeamento .soleGallery i{height:178px!important}
+.demo-bronzeamento .soleHow h2{font-size:34px!important}
+.demo-bronzeamento .soleSteps div{min-height:130px!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+.demo-bronzeamento .soleCareGrid{display:grid!important;grid-template-columns:1fr!important;gap:0!important}
+.demo-bronzeamento .soleCarePhoto{min-height:270px!important;border-radius:14px 14px 0 0!important}
+.demo-bronzeamento .soleCareBox{border-radius:0 0 14px 14px!important}
+.demo-bronzeamento .soleTest{padding:28px 4px 8px!important}
+.demo-bronzeamento .soleTest h2{font-size:31px!important;margin-top:7px!important}
+.demo-bronzeamento .soleTest>p{font-size:11px!important}
+.demo-bronzeamento .soleFinal h2{font-size:33px!important;line-height:1.05!important}
+.demo-bronzeamento .soleFinal button{width:100%!important;padding:15px!important}
+.demo-bronzeamento .soleFinalBenefits span{padding:14px 6px!important}
+.demo-bronzeamento .soleFooter .wrap{gap:18px!important}
+}
 </style>
 </head>
 <body>
@@ -304,9 +345,9 @@ if(k==="bronzeamento"){
 document.getElementById("app").innerHTML='<div class="demo demo-bronzeamento"><header class="soleNav"><div class="wrap soleNavIn"><div class="soleLogo">S☀LÉ<small>ESPAÇO SOL DE VERÃO</small></div><div class="soleLinks"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#resultados">Resultados</a><a href="#cuidados">Cuidados</a><a href="#sobre">Sobre</a><a href="#dcontato">Contato</a></div><a class="soleBook" href="#dcontato">◉ Agendar agora</a></div></header><main>'+
 '<section class="soleHero" id="inicio"><div class="soleHeroImg" style="background-image:url('+d.img+')"></div><div class="wrap soleHeroIn"><div class="soleKicker">BELEZA NATURAL, O ANO TODO</div><h1>Seu bronze.<br>Sua marquinha.<br><em>Seu momento.</em></h1><p>Bronzeamento com cuidado, conforto e resultados que valorizam a sua beleza.</p><a class="soleGoldBtn" href="#dcontato">◉ &nbsp; Agendar pelo WhatsApp &nbsp;→</a><div class="soleBenefits"><span>✧<b>Atendimento<br>personalizado</b></span><span>♢<b>Ambiente seguro<br>e higienizado</b></span><span>☀<b>Resultados<br>naturais e uniformes</b></span></div></div></section>'+
 '<section class="soleServices" id="servicos"><div class="wrap"><div class="soleServiceTop"><div><small>NOSSOS SERVIÇOS</small><h2>Escolha como quer<br>realçar seu bronze.</h2><p>Temos opções para cada objetivo, com acompanhamento<br>profissional e produtos de qualidade.</p></div><div class="soleHelp">◉ <b>Não sabe qual é ideal para você?</b><span>Fale conosco no WhatsApp e receba uma orientação personalizada.</span><strong>›</strong></div></div><div class="soleCards">'+[['Bronze Natural','Realça o tom da sua pele de forma natural e uniforme.','30 minutos','Resultado natural'],['Marquinha Perfeita','Valoriza suas curvas e deixa aquela marquinha definida.','40 minutos','Resultado mais definido'],['Bronze na Cabine','Sessão prática com acompanhamento profissional.','30 minutos','Bronze intenso e duradouro']].map(function(x,i){return '<article class="soleCard"><div class="soleCardPic pic'+i+'"></div><h3>'+x[0]+'</h3><p>'+x[1]+'</p><span>◷ &nbsp; Duração: '+x[2]+'</span><span>✦ &nbsp; '+x[3]+'</span><a href="#dcontato">Agendar agora →</a></article>'}).join("")+'</div></div></section>'+
-'<section class="soleResults" id="resultados"><div class="wrap"><div class="soleResultHead"><div><h2>Resultados reais</h2><p>Veja exemplos de como o bronze e a marquinha valorizam ainda mais a sua beleza.</p></div><a href="#dcontato">Ver mais resultados →</a></div><div class="soleGallery"><i></i><i></i><i></i><i></i></div></div></section>'+
+'<section class="soleResults" id="resultados"><div class="wrap"><div class="soleResultHead"><div><h2>Inspiração de resultados</h2><p>Uma apresentação visual do estilo de resultado que pode ser destacado no site.</p></div><a href="#dcontato">Quero agendar →</a></div><div class="soleGallery"><i></i><i></i><i></i><i></i></div><small class="solePhotoNote">Imagens demonstrativas. Na versão final, este espaço recebe fotos reais do negócio.</small></div></section>'+
 '<section class="soleHow"><div class="wrap"><h2>Como funciona</h2><p>Simples, prático e seguro.</p><div class="soleSteps"><div>▣<b>1. Agende seu horário</b><span>Escolha o melhor dia e horário pelo WhatsApp.</span></div><div>◎<b>2. Atendimento personalizado</b><span>Receba orientações conforme o seu objetivo.</span></div><div>☀<b>3. Faça sua sessão</b><span>Em um ambiente seguro e confortável.</span></div><div>♡<b>4. Aproveite o resultado</b><span>Saia pronta para brilhar com sua marquinha.</span></div></div></div></section>'+
-'<section class="soleCare" id="cuidados"><div class="wrap soleCareGrid"><div class="soleCarePhoto"></div><div class="soleCareBox"><h2>Cuidados com a pele</h2><span>✓ Hidratação antes e depois da sessão</span><span>✓ Uso de protetor solar</span><span>✓ Produtos específicos para bronzeamento</span><span>✓ Orientações personalizadas</span><span>✓ Mais duração e um resultado ainda mais bonito</span></div><div class="soleTest" id="sobre"><h2>O que nossas clientes dizem</h2><div><b>★★★★★</b><p>Espaço reservado para avaliações reais das clientes após a personalização do site.</p><strong>Cliente verificada</strong></div></div></div></section>'+
+'<section class="soleCare" id="cuidados"><div class="wrap soleCareGrid"><div class="soleCarePhoto"></div><div class="soleCareBox"><h2>Cuidados com a pele</h2><span>✓ Orientações antes e depois da sessão</span><span>✓ Preparação adequada da pele</span><span>✓ Atendimento personalizado</span><span>✓ Cuidados para valorizar o resultado</span></div><div class="soleTest" id="sobre"><small>EXPERIÊNCIA</small><h2>Cuidado em cada detalhe.</h2><p>Do primeiro contato ao pós-atendimento, cada etapa pode ser apresentada de forma clara, elegante e profissional.</p><a href="#dcontato">Falar pelo WhatsApp →</a></div></div></section>'+
 '<section class="soleFinal" id="dcontato"><div class="wrap soleFinalGrid"><div><h2>Pronta para viver esse momento?</h2><p>Agende seu horário agora mesmo pelo WhatsApp<br>e conquiste o bronze e a marquinha dos seus sonhos.</p><button id="wpp">◉ &nbsp; Agendar pelo WhatsApp &nbsp;→</button></div><div class="soleFinalBenefits"><span>♢<b>Beleza<br>e autoestima</b></span><span>♧<b>Cuidado<br>com você</b></span><span>☀<b>Resultados<br>com qualidade</b></span></div></div></section></main>'+
 '<footer class="soleFooter"><div class="wrap"><div class="soleLogo dark">S☀LÉ<small>ESPAÇO SOL DE VERÃO</small></div><span>◉ &nbsp; Agende pelo WhatsApp<br><b>(62) 9 9999-9999</b></span><span>⌖ &nbsp; Nosso endereço<br><b>Goiânia - GO</b></span><span>◷ &nbsp; Horário de atendimento<br><b>Seg a Sáb: 08h às 20h</b></span></div></footer><div class="mobileCta"><span>SOLÉ</span><a href="#dcontato">Agendar →</a></div></div>';
 }else{
